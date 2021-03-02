@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="stylesheet.css" />
+  <title>Quizz App</title>
+</head>
+
+<body>
+  <div class="container">
+
+    <header>
+      <h1>Current Highscore: </h1>
+      <label id="highscorename"></label>
+      <label id="highscorevalue"></label>
+    </header>
+
+    <section class="genstyle">
+      <button onclick="timedText()">Start Quiz</button>
+      <p id="triviaQuestion" class="hidequestion">Questions</p>
+      <div id="triviaAnswer" class="hideanswer"></div>
+    </section>
+
+    <section class="genstyle">
+      <p id="countdown">Time left</p>
+    </section>
+
+    <section class="genstyle" class="recordscore">
+      <h2>Record your score:</h 2>
+      <input id="playmate" , type="text"></input>
+      </br>
+      <button onclick="populateStorage()" type="button">Save Name</button>
+      <p id="displaymessage"></p>
+    </section>
+
+  </div>
+
+  <Script src="./script.js"></Script>
+  <Script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</body>
+
+</html>
